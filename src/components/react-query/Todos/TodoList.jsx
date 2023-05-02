@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import {memo} from 'react';
 import {useQuery} from "react-query";
 import DeleteTodo from "./DeleteTodo";
 import AddTodo from "./AddTodo";

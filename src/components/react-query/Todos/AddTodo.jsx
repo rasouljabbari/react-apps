@@ -1,4 +1,4 @@
-import React from 'react';
+import {memo} from 'react';
 import {useMutation, useQueryClient} from "react-query";
 
 function AddTodo() {
@@ -48,6 +48,7 @@ function AddTodo() {
             title: event.target.elements.title.value,
             completed: false,
         })
+        event.target.elements.title.value = ''
     }
 
     return (
@@ -59,4 +60,4 @@ function AddTodo() {
     );
 }
 
-export default AddTodo;
+export default memo(AddTodo);

@@ -1,4 +1,4 @@
-import React from 'react';
+import {memo} from 'react';
 import {useMutation, useQueryClient} from "react-query";
 
 function DeleteTodo({id}) {
@@ -24,4 +24,4 @@ function DeleteTodo({id}) {
     );
 }
 
-export default DeleteTodo;
+export default memo(DeleteTodo);
