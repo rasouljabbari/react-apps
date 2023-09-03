@@ -25,7 +25,6 @@ function TodoList() {
                         <li key={id}>{title} <DeleteTodo id={id} /></li>
                     ))
                 }
-                <div>{vsdvdsvdsv}</div>
             </ul>
             <AddTodo />
         </>
